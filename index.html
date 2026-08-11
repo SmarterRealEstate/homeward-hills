@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homeward Hills | New Homes in North Oshawa | VIP Platinum Registration</title>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','4093978017293385');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4093978017293385&ev=PageView&noscript=1"/></noscript>
+
+  <!-- Fonts: Mulish (Sorbara brand font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --slate:   #434B56;
+      --slate2:  #2e353f;
+      --sage:    #EBEDEA;
+      --sage2:   #d8dbd6;
+      --text:    #464A4D;
+      --text-lt: #6b7280;
+      --white:   #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      line-height: 1.2;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--slate2);
+      padding: 18px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-cta {
+      font-family: 'Mulish', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--slate);
+      background: var(--sage);
+      border: 2px solid var(--sage);
+      padding: 12px 28px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+    .nav-cta:hover {
+      background: transparent;
+      color: var(--sage);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('https://sorbara-bkt.s3.amazonaws.com/wp-content/uploads/2023/11/Homeward-Hills-Google-Image-.jpg') center/cover no-repeat;
+      padding: 140px 20px 80px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(46, 53, 63, 0.62);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sage);
+      opacity: 0.85;
+      margin-bottom: 28px;
+    }
+
+    .hero-logo {
+      width: 320px;
+      max-width: 90%;
+      margin: 0 auto 36px;
+      display: block;
+      filter: brightness(0) invert(1);
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.4rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--sage);
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    .hero-detail {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--sage);
+      opacity: 0.7;
+      margin-bottom: 44px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      font-family: 'Mulish', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--slate);
+      background: var(--sage);
+      border: 2px solid var(--sage);
+      padding: 18px 48px;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--sage);
+    }
+
+    /* ── STATS STRIP ── */
+    .stats {
+      background: var(--slate);
+      padding: 32px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+      color: var(--sage);
+    }
+    .stat-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block;
+      letter-spacing: 0.04em;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-top: 4px;
+    }
+
+    /* ── INTRO SECTION ── */
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 520px;
+    }
+    .intro-text {
+      background: var(--sage);
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .intro-text .eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--slate);
+      opacity: 0.6;
+      margin-bottom: 20px;
+    }
+    .intro-text h2 {
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      font-weight: 300;
+      color: var(--slate);
+      margin-bottom: 20px;
+    }
+    .intro-text p {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .intro-img {
+      background: url('https://sorbara.com/wp-content/uploads/2023/11/SRB_Homeward_Hills_intro_image-1024x1024.jpg') center/cover no-repeat;
+    }
+
+    /* ── HIGHLIGHTS ── */
+    .highlights {
+      padding: 90px 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .highlights .section-eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--slate);
+      opacity: 0.5;
+      margin-bottom: 16px;
+    }
+    .highlights h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      color: var(--slate);
+      margin-bottom: 60px;
+    }
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+    .highlight-card {
+      text-align: left;
+      padding: 36px 30px;
+      border-top: 2px solid var(--sage2);
+    }
+    .highlight-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--slate);
+      opacity: 0.15;
+      margin-bottom: 12px;
+      display: block;
+      line-height: 1;
+    }
+    .highlight-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--slate);
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+    .highlight-card p {
+      font-size: 0.88rem;
+      color: var(--text-lt);
+      line-height: 1.7;
+    }
+
+    /* ── LIFESTYLE IMAGE ROW ── */
+    .lifestyle {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+    }
+    .lifestyle-img {
+      background: url('https://sorbara-bkt.s3.amazonaws.com/wp-content/uploads/2023/11/SRB_Homeward_Hills_location_2-1024x683.jpg') center/cover no-repeat;
+    }
+    .lifestyle-text {
+      background: var(--slate);
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--white);
+    }
+    .lifestyle-text .eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sage);
+      opacity: 0.7;
+      margin-bottom: 20px;
+    }
+    .lifestyle-text h2 {
+      font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+      font-weight: 300;
+      color: var(--sage);
+      margin-bottom: 20px;
+    }
+    .lifestyle-text p {
+      font-size: 0.95rem;
+      color: var(--sage);
+      opacity: 0.85;
+      line-height: 1.8;
+    }
+
+    /* ── FORM SECTION ── */
+    .form-section {
+      background: var(--slate2);
+      padding: 90px 40px;
+      text-align: center;
+      scroll-margin-top: 70px;
+    }
+    .form-section .section-eyebrow {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--sage);
+      opacity: 0.6;
+      margin-bottom: 16px;
+    }
+    .form-section h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .form-section .form-sub {
+      font-size: 0.95rem;
+      color: var(--sage);
+      opacity: 0.8;
+      margin-bottom: 48px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #hs-form-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── BUILDER SECTION ── */
+    .builder {
+      background: var(--sage);
+      padding: 70px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .builder-logo-wrap img {
+      height: 52px;
+      width: auto;
+      opacity: 0.85;
+    }
+    .builder-text {
+      max-width: 540px;
+    }
+    .builder-text h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--slate);
+      margin-bottom: 10px;
+    }
+    .builder-text p {
+      font-size: 0.88rem;
+      color: var(--text-lt);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--slate2);
+      padding: 32px 40px;
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--sage);
+      opacity: 0.65;
+      line-height: 1.8;
+    }
+
+    /* ── HubSpot form overrides (parent page) ── */
+    .hubspot-link__container,
+    .hubspot-link__container *,
+    .hs-form__virality-link,
+    .hs-form__virality-link * { display: none !important; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .nav-logo { height: 28px; }
+      .intro, .lifestyle { grid-template-columns: 1fr; }
+      .intro-img, .lifestyle-img { min-height: 280px; }
+      .intro-text, .lifestyle-text { padding: 50px 28px; }
+      .highlights { padding: 60px 20px; }
+      .highlights-grid { grid-template-columns: 1fr; gap: 24px; }
+      .stats { gap: 30px; padding: 28px 20px; }
+      .builder { flex-direction: column; text-align: center; gap: 24px; }
+      .form-section { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <img class="nav-logo"
+      src="https://sorbara-bkt.s3.amazonaws.com/wp-content/uploads/2023/12/SRB_Homeward_Hills_logo_header_white-512x317.png"
+      alt="Homeward Hills" />
+    <a class="nav-cta" href="#register">Register for VIP Platinum Access</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Now Registering — North Oshawa</p>
+      <img class="hero-logo"
+        src="https://sorbara-bkt.s3.amazonaws.com/wp-content/uploads/2023/12/SRB_Homeward_Hills_logo_header_white-512x317.png"
+        alt="Homeward Hills" />
+      <h1>Space to Live.<br>Room to Thrive.</h1>
+      <p class="hero-sub">A master-planned community of freehold towns and detached homes in North Oshawa.</p>
+      <p class="hero-detail">Freehold Townhomes &bull; 32ft, 36ft &amp; 40ft Detached &bull; From 1,252 Sq. Ft.</p>
+      <a class="btn-primary" href="#register">Register for VIP Platinum Access</a>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-num">1,252–3,154</span>
+      <span class="stat-label">Square Feet</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">3–6</span>
+      <span class="stat-label">Bedrooms</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2.5–4.5</span>
+      <span class="stat-label">Bathrooms</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">North Oshawa</span>
+      <span class="stat-label">Location</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro-text">
+      <p class="eyebrow">Welcome Home</p>
+      <h2>Ever-Evolving.<br>Ever-Expanding.</h2>
+      <p>Set within the burgeoning landscape of North Oshawa, Homeward Hills is a master-planned community built for how you actually live. Whether it's working from home, raising a family, or simply having the space to breathe — every detail has been crafted with your life in mind.</p>
+    </div>
+    <div class="intro-img"></div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <p class="section-eyebrow">Why Homeward Hills</p>
+    <h2>Built Around Your Life</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <span class="highlight-num">01</span>
+        <h3>Premier Location</h3>
+        <p>Steps from top-rated schools, parks, Ontario Tech University, and Durham College. Everything your family needs is right around the corner.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">02</span>
+        <h3>Flexible Floor Plans</h3>
+        <p>Freehold townhomes and 32ft, 36ft and 40ft detached singles ranging from 1,252 to 3,154 sq. ft. — designed to fit every stage of life.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">03</span>
+        <h3>Connected Community</h3>
+        <p>Open spaces, neighbourhood parkettes and architecturally controlled streetscapes weave together a desirable neighbourhood you'll be proud to call home.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">04</span>
+        <h3>High Design Finishes</h3>
+        <p>Work side-by-side with Sorbara's design consultants to personalize your home with a wide range of premium finishes and structural options.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">05</span>
+        <h3>Adventure Nearby</h3>
+        <p>Visit local markets, hit the ski slopes, explore conservation areas, or dine at neighbourhood restaurants — all within easy reach.</p>
+      </div>
+      <div class="highlight-card">
+        <span class="highlight-num">06</span>
+        <h3>VIP Platinum Access</h3>
+        <p>Be first through the door. Register now to receive exclusive pricing, floor plans, and incentives before the public opening.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIFESTYLE SPLIT -->
+  <section class="lifestyle">
+    <div class="lifestyle-img"></div>
+    <div class="lifestyle-text">
+      <p class="eyebrow">Location</p>
+      <h2>Adventure Unbounded</h2>
+      <p>Homeward Hills places you at the heart of North Oshawa — a city on the move, surrounded by natural beauty, great schools, and urban amenities. Commuting downtown? You're minutes from Hwy 407, Hwy 115, and GO Transit. Staying local? Everything you need is already here.</p>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section" id="register">
+    <p class="section-eyebrow">VIP Platinum Registration</p>
+    <h2>Get First Access to Homeward Hills</h2>
+    <p class="form-sub">Register now to receive exclusive VIP Platinum pricing, floor plans, and incentives before the public opening. Spots are limited.</p>
+    <div id="hs-form-container"></div>
+  </section>
+
+  <!-- BUILDER -->
+  <section class="builder">
+    <div class="builder-logo-wrap">
+      <img src="https://sorbara.com/wp-content/themes/sorbara-website/img/sorbara-communities-logo-staging.png"
+           alt="Sorbara Communities" />
+    </div>
+    <div class="builder-text">
+      <h3>About Sorbara</h3>
+      <p>For over 75 years, the Sorbara Group of Companies has been building exceptional communities across the Greater Toronto Area. Known for their commitment to quality, design, and craftsmanship, Sorbara brings decades of expertise and a legacy of trusted homebuilding to every project they undertake.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    We do not represent the builder directly. We represent you. Renderings are artist's imagination only. All information, prices, specifications, floor plans, and incentives are subject to change at any time without notice. E. &amp; O.E.<br>
+    Jeffrey Villeneuve &nbsp;|&nbsp; Meta Realty Inc. &nbsp;|&nbsp; info@smarterrealestate.ca &nbsp;|&nbsp; (647) 409-7653
+  </footer>
+
+  <!-- HubSpot -->
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    var HS_PORTAL = '39925421';
+    var HS_FORM   = '0409601d-8303-4b5b-9c01-bef50722c391';
+
+    hbspt.forms.create({
+      region:   'na2',
+      portalId: HS_PORTAL,
+      formId:   HS_FORM,
+      target:   '#hs-form-container',
+      onFormReady: function($form) {
+        try {
+          var iframe = document.querySelector('.hs-form-iframe');
+          if (iframe && iframe.contentDocument) {
+            var s = iframe.contentDocument.createElement('style');
+            var css = '.hs-button,input[type="submit"]{background:#EBEDEA!important;background-color:#EBEDEA!important;color:#434B56!important;font-family:Mulish,sans-serif!important;font-size:11px!important;font-weight:800!important;letter-spacing:3px!important;text-transform:uppercase!important;padding:16px 40px!important;border:2px solid #EBEDEA!important;border-radius:0!important;width:100%!important;box-shadow:none!important;cursor:pointer!important;}.hs-button:hover,input[type="submit"]:hover{background:transparent!important;background-color:transparent!important;color:#EBEDEA!important;border-color:#EBEDEA!important;}.hs-form__virality-link,.hs-form__virality-link *,.hubspot-link__container,.hubspot-link__container *{display:none!important;}';
+            s.appendChild(iframe.contentDocument.createTextNode(css));
+            iframe.contentDocument.head.appendChild(s);
+          }
+        } catch(e) {}
+      },
+      onFormSubmit: function($form) {
+        fbq('track', 'Lead', { content_name: 'Homeward Hills VIP Registration' });
+      }
+    });
+  </script>
+
+</body>
+</html>
