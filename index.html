@@ -579,6 +579,20 @@
             var css = '.hs-button,input[type="submit"]{background:#EBEDEA!important;background-color:#EBEDEA!important;color:#434B56!important;font-family:Mulish,sans-serif!important;font-size:11px!important;font-weight:800!important;letter-spacing:3px!important;text-transform:uppercase!important;padding:16px 40px!important;border:2px solid #EBEDEA!important;border-radius:0!important;width:100%!important;box-shadow:none!important;cursor:pointer!important;}.hs-button:hover,input[type="submit"]:hover{background:transparent!important;background-color:transparent!important;color:#EBEDEA!important;border-color:#EBEDEA!important;}.hs-form__virality-link,.hs-form__virality-link *,.hubspot-link__container,.hubspot-link__container *{display:none!important;}label,.hs-field-desc,.hs-richtext{color:#ffffff!important;}.hs-input{background:rgba(255,255,255,0.1)!important;border:1px solid rgba(255,255,255,0.3)!important;color:#ffffff!important;}.hs-input::placeholder{color:rgba(255,255,255,0.5)!important;}select.hs-input option{color:#333!important;background:#fff!important;}.hs-error-msg{color:#ffcccc!important;}.submitted-message{color:#ffffff!important;font-size:16px!important;line-height:1.6!important;}';
             s.appendChild(iframe.contentDocument.createTextNode(css));
             iframe.contentDocument.head.appendChild(s);
+              var iframeDoc = iframe && iframe.contentDocument;
+              if (iframeDoc) {
+                var hsForm = iframeDoc.querySelector('form');
+                if (hsForm) {
+                  [['project','Homeward Hills'],['contact_tier','Tier 6 -Social Media Lead'],['client_type','Preconstruction']].forEach(function(p) {
+                    var ex = hsForm.querySelector('input[name="' + p[0] + '"]');
+                    if (ex) { ex.value = p[1]; } else {
+                      var inp = iframeDoc.createElement('input');
+                      inp.type = 'hidden'; inp.name = p[0]; inp.value = p[1];
+                      hsForm.appendChild(inp);
+                    }
+                  });
+                }
+              }
           }
         } catch(e) {}
       },
